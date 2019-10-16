@@ -1,0 +1,9 @@
+To recompile the firmware 
+mkdir build
+cd build
+cmake .. 
+sudo make firmware
+
+# now go grab the bin file from the firmware file and flash that shit
+# make sure the portapack is in hack RF mode.
+hackrf_spiflash -w (filename).bin
